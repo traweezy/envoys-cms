@@ -5,9 +5,9 @@
   "description": "A Strapi application",
   "scripts": {
     "develop": "strapi develop",
-    "start": "strapi start",
+    "start": "strapi develop",
     "build": "strapi build",
-    "strapi": "strapi"
+    "strapi": "strapi develop"
   },
   "dependencies": {
     "@strapi/plugin-i18n": "4.0.3",
