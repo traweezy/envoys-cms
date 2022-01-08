@@ -4,7 +4,8 @@
   "info": {
     "singularName": "tab",
     "pluralName": "tabs",
-    "displayName": "Tab"
+    "displayName": "Tab",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -30,15 +31,21 @@
       "required": true
     },
     "File": {
-      "allowedTypes": [
-        "files"
-      ],
       "type": "media",
       "multiple": false,
-      "required": true
+      "required": true,
+      "allowedTypes": [
+        "files"
+      ]
     },
     "Author": {
-      "type": "string",
+      "type": "enumeration",
+      "enum": [
+        "Kyle",
+        "Tyler",
+        "Jordan",
+        "Matt"
+      ],
       "required": true
     }
   }
