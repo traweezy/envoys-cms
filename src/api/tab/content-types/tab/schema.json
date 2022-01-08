@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tabs",
+  "info": {
+    "singularName": "tab",
+    "pluralName": "tabs",
+    "displayName": "Tab"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Instrument": {
+      "type": "enumeration",
+      "enum": [
+        "Lead",
+        "Rhythm",
+        "Bass",
+        "Drums"
+      ],
+      "required": true
+    },
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "Version": {
+      "type": "decimal",
+      "required": true
+    },
+    "File": {
+      "allowedTypes": [
+        "files"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "Author": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

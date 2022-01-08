@@ -1,7 +1,7 @@
 ############################
 # OS X
 ############################
-
+.vscode
 .DS_Store
 .AppleDouble
 .LSOverride
