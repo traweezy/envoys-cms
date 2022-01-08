@@ -3,7 +3,7 @@ module.exports = {
     {
       name: 'envoys-cms',
       script: 'npm',
-      args: 'start:strapi',
+      args: 'run start:strapi',
     },
   ],
 };
