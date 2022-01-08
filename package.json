@@ -5,7 +5,7 @@
   "description": "A Strapi application",
   "scripts": {
     "develop": "strapi develop",
-    "start": "pm2 start npm --name envoys_cms -- run start:strapi",
+    "start": "pm2 start ecosystem.config.js",
     "start:strapi": "strapi start",
     "build": "strapi build",
     "strapi": "strapi"
@@ -18,10 +18,8 @@
     "buffer-writer": "^2.0.0",
     "pg": "^8.7.1",
     "pg-connection-string": "^2.5.0",
-    "pm2": "^5.1.2",
     "sqlite3": "5.0.2",
-    "strapi-provider-upload-aws-s3": "^3.6.8",
-    "strapi-provider-upload-aws-s3-advanced": "^4.0.2"
+    "strapi-provider-upload-aws-s3": "^3.6.8"
   },
   "author": {
     "name": "Tyler Schumacher"
@@ -30,7 +28,7 @@
     "uuid": "3f5dcc95-b7e6-49dc-9678-e5541733a44a"
   },
   "engines": {
-    "node": "17.x.x",
+    "node": ">=12.x.x <=16.x.x",
     "npm": ">=6.0.0"
   },
   "license": "MIT"
