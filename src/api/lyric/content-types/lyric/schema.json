@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "lyrics",
+  "info": {
+    "singularName": "lyric",
+    "pluralName": "lyrics",
+    "displayName": "Lyrics",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "Version": {
+      "default": 0,
+      "required": true,
+      "type": "integer"
+    },
+    "File": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "files"
+      ]
+    },
+    "Author": {
+      "type": "enumeration",
+      "enum": [
+        "Tyler",
+        "Kyle",
+        "Matt",
+        "Jordan"
+      ],
+      "required": true
+    }
+  }
+}
